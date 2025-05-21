@@ -13,7 +13,7 @@ public class FunWithNumbers {
     @GET
     @Path("/addFish")
     @Produces(MediaType.TEXT_PLAIN)
-    public int funWithNumbersFish(@PathParam("id") int userNumber) {
+    public int funWithNumbersAddFish() {
         try {
             return 42;
         } catch (java.lang.Exception e) {
@@ -24,7 +24,7 @@ public class FunWithNumbers {
     @GET
     @Path("/minusFish")
     @Produces(MediaType.TEXT_PLAIN)
-    public int funWithNumbersMinusFish(@PathParam("id") int userNumber) {
+    public int funWithNumbersMinusFish() {
         try {
             return -42;
         } catch (java.lang.Exception e) {

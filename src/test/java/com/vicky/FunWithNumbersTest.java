@@ -9,12 +9,21 @@ import static org.hamcrest.CoreMatchers.is;
 @QuarkusTest
 class FunWithNumbersTest {
     @Test
-    void testHelloEndpoint() {
+    void testFunWithNumbersAddEndpoint() {
         given()
           .when().get("/funWithNumbers/addFish")
           .then()
              .statusCode(200)
              .body(is("42"));
+    }
+
+    @Test
+    void testFunWithNumbersMinusEndpoint() {
+        given()
+                .when().get("/funWithNumbers/minusFish")
+                .then()
+                .statusCode(200)
+                .body(is("-42"));
     }
 
 }
