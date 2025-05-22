@@ -26,4 +26,12 @@ class FunWithNumbersTest {
                 .body(is("-42"));
     }
 
+    @Test
+    void testFunWithNumbersSoLong() {
+        given()
+                .when().get("/funWithNumbers/soLong")
+                .then()
+                .statusCode(200)
+                .body(is(""));
+    }
 }

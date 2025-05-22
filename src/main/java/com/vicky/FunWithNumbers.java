@@ -32,4 +32,12 @@ public class FunWithNumbers {
         }
 
     }
+
+    @GET
+    @Path("/soLong")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String funWithNumbersSoLong() {
+        //does nothing
+        return "";
+    }
 }
